@@ -208,6 +208,35 @@ h3 {
     border: 2px solid #6f4c3e;
 }
 
+.voksfit-section {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #7C623D; /* Warna emas-kecoklatan sesuai gambar */
+    background-color: #F9F9F9; /* Warna latar belakang putih */
+    padding: 20px;
+}
+
+.voksfit-section .line {
+    width: 2px;
+    height: 100px;
+    background-color: #7C623D; /* Warna emas-kecoklatan */
+    margin: 0 auto;
+}
+
+.voksfit-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.voksfit-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+
 /* Footer Styles */
 footer {
     background-color: #fff;
