@@ -15,29 +15,48 @@ header {
     color: white;
 }
 
-header h1 a {
+.container {
+    background: #978466; /* Transparansi kotak */
+    backdrop-filter: blur(8px); /* Efek blur pada kotak */
+    padding: 60px 10px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 1000px;
+    width: 100%; /* Pastikan kotak tidak lebih lebar dari konten */
+    position: absolute; /* Memungkinkan pengaturan posisi manual */
+    top: 150px; /* Sesuaikan jarak dari atas */
+    left: 50%; /* Posisi di tengah horizontal */
+    transform: translateX(-50%); /* Menyeimbangkan posisi kotak agar tetap di tengah */
+    z-index: 1; /* Menjamin kotak tetap di atas latar belakang */
+}
+
+h1 a {
     text-decoration: none;
-    color: white;
-    font-size: 1.8rem;
+    color: #978466;
+    font-size: 1.0em;
+    font-weight: bold;
 }
 
 nav ul {
-    display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-size: 1rem;
+    color: #978466;
+    font-weight: 50;
+    transition: color 0.3s ease;
 }
 
-main {
-    margin: 0;
-    padding: 0;
+nav ul li a:hover {
+    color: #ff5733;
+    text-decoration: underline;
 }
 
 /* Hero Section */
