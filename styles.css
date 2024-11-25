@@ -1,148 +1,178 @@
-/* styles.css */
-
 /* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem; /* Basis ukuran font */
+    line-height: 1.5;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: #333;
-    color: #fff;
+    background-color: #333;
+    color: white;
 }
 
 header h1 a {
     text-decoration: none;
-    color: #fff;
+    color: white;
+    font-size: 1.8rem;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: white;
+    font-size: 1rem;
+}
+
+main {
+    margin: 0;
+    padding: 0;
 }
 
 /* Hero Section */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    background: #007acc;
+    background-color: #444;
     text-align: center;
+    padding: 50px 20px;
+    color: white;
 }
 
 .hero .container h2 {
     font-size: 2rem;
-    margin: 0;
+    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 1rem;
-    margin: 10px 0;
+    margin-bottom: 20px;
 }
 
 .hero .button {
+    background-color: #ff9800;
+    color: white;
     padding: 10px 20px;
+    font-size: 1rem;
     border: none;
-    background: #fff;
-    color: #007acc;
     cursor: pointer;
-    font-weight: 600;
+    border-radius: 5px;
 }
 
 /* Departments Section */
 .departments {
-    padding: 40px;
+    padding: 40px 20px;
     text-align: center;
+}
+
+.departments h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 
 .department-grid {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin: 20px 0;
-}
-
-.department {
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
 }
 
 .department img {
     max-width: 100%;
-    border-radius: 8px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.department h4 {
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
 /* Recommendations Section */
 .recommendations {
-    padding: 40px;
+    padding: 40px 20px;
     text-align: center;
 }
 
 .recommendation-grid {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 .recommendation img {
     max-width: 100%;
-    border-radius: 8px;
+    height: auto;
+    border-radius: 5px;
 }
 
-/* About Us */
+.recommendations p {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* About Us Section */
 #about-us {
-    padding: 40px;
+    padding: 40px 20px;
     text-align: center;
 }
 
 .team {
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 .team-member img {
     max-width: 100%;
+    height: auto;
     border-radius: 50%;
+}
+
+.team-member p {
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
 .line {
     height: 2px;
-    background: #ccc;
-    margin: 20px 0;
+    background-color: #ddd;
+    margin: 20px auto;
+}
+
+.content {
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
-    color: #fff;
+    background-color: #333;
+    color: white;
 }
 
 /* Media Queries */
+
+/* Tablet (768px ke bawah) */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
+    body {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
     }
 
     nav ul {
@@ -160,13 +190,52 @@ footer {
 
     .hero .button {
         font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .department-grid,
+    .recommendation-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .team {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
+/* HP (480px ke bawah) */
 @media (max-width: 480px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
     .hero {
-        height: auto;
         padding: 20px;
+    }
+
+    .hero .container h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero p {
+        font-size: 0.8rem;
+    }
+
+    .hero .button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
     }
 
     .department-grid,
