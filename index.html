@@ -10,12 +10,14 @@
 <body>
     <!-- Header -->
     <header>
-        <h1><a href="#">VoksFit!</a></h1>
-        <nav>
-            <ul>
-                <li><a href="#about-us">About Us</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1><a href="#">VoksFit!</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about-us">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Main Content -->
@@ -23,8 +25,8 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
-                <h2 style="color: white;">Hello Voks-Friends!</h2>
-                <p style="color: white;">Make Your Outfit Stylish More Gorgeous As Your Major Vibes!</p>
+                <h2>Hello Voks-Friends!</h2>
+                <p>Make Your Outfit Stylish More Gorgeous As Your Major Vibes!</p>
                 <button class="button">Pick Your Style</button>
             </div>
         </section>
@@ -57,81 +59,61 @@
         <!-- Recommendations Section -->
         <section class="recommendations">
             <h2>Be Comfy and Fashionable!</h2>
-            
-            <!-- Grid pertama untuk 3 foto pertama -->
             <div class="recommendation-grid">
-                <div class="recommendation">
-                    <img src="skena.png" alt="Outfit Recommendation 1">
-                </div>
-                <div class="recommendation">
-                    <img src="skena.png" alt="Outfit Recommendation 2">
-                </div>
-                <div class="recommendation">
-                    <img src="skena.png" alt="Outfit Recommendation 3">
-                </div>
+                <div class="recommendation"><img src="skena.png" alt="Outfit Recommendation"></div>
+                <div class="recommendation"><img src="skena.png" alt="Outfit Recommendation"></div>
+                <div class="recommendation"><img src="skena.png" alt="Outfit Recommendation"></div>
             </div>
-            
             <p>Our References to Recommendation for Your Outfit Style.</p>
-            
-            <!-- Grid kedua untuk 3 foto kedua -->
             <div class="recommendation-grid">
-                <div class="recommendation">
-                    <img src="skena.png" alt="Outfit Recommendation 4">
-                </div>
-                <div class="recommendation">
-                    <img src="skena.png" alt="Outfit Recommendation 5">
-                </div>
-                <div class="recommendation">
-                    <img src="skena.png" alt="Outfit Recommendation 6">
-                </div>
+                <div class="recommendation"><img src="skena.png" alt="Outfit Recommendation"></div>
+                <div class="recommendation"><img src="skena.png" alt="Outfit Recommendation"></div>
+                <div class="recommendation"><img src="skena.png" alt="Outfit Recommendation"></div>
             </div>
         </section>
 
         <!-- About Us Section -->
         <section id="about-us">
             <h2>About Us</h2>
-            <div class="team-member">
-                <a href="https://www.instagram.com/salwanzhfh" target="_blank" style="text-decoration: none; color: inherit;">
-                    <img src="salwa.png" alt="Member 1">
-                    <p>Salwa Zahra N - Project Manager</p>
-                </a>
-             </div>
-             <div class="team-member">
-                <a href="https://www.instagram.com/vana.xyara" target="_blank" style="text-decoration: none; color: inherit;">
-                    <img src="diva.png" alt="Member 2">
-                    <p>Diva Cahya Fadillah - UI/UX Designer</p>
-                </a>
-             </div>
-             <div class="team-member">
-                <a href="https://www.instagram.com/elgaaalfiras" target="_blank" style="text-decoration: none; color: inherit;">
-                    <img src="elgari.png.jpg" alt="Member 3">
-                    <p>Muhammad Elgari Alfiras - Software Developer</p>
-                </a>
-             </div>
-             <div class="team-member">
-                <a href="https://www.instagram.com/sailornano" target="_blank" style="text-decoration: none; color: inherit;">
-                    <img src="faiza.png.jpg" alt="Member 4">
-                    <p>Faiza Kamila Khairunnisa - Software Developer</p>
-                </a>
-             </div>
-            <div class="team-member">
-                <a href="https://www.instagram.com/rafarfdh_" target="_blank" style="text-decoration: none; color: inherit;">
-                    <img src="rafah.png" alt="Member 5">
-                    <p>Rafa Rifdah Fadillah - Researcher</p>
-                </a>
+            <div class="team">
+                <div class="team-member">
+                    <a href="https://www.instagram.com/salwanzhfh" target="_blank">
+                        <img src="salwa.png" alt="Salwa Zahra N">
+                        <p>Salwa Zahra N - Project Manager</p>
+                    </a>
+                </div>
+                <div class="team-member">
+                    <a href="https://www.instagram.com/vana.xyara" target="_blank">
+                        <img src="diva.png" alt="Diva Cahya Fadillah">
+                        <p>Diva Cahya Fadillah - UI/UX Designer</p>
+                    </a>
+                </div>
+                <div class="team-member">
+                    <a href="https://www.instagram.com/elgaaalfiras" target="_blank">
+                        <img src="elgari.png.jpg" alt="Muhammad Elgari Alfiras">
+                        <p>Muhammad Elgari Alfiras - Software Developer</p>
+                    </a>
+                </div>
+                <div class="team-member">
+                    <a href="https://www.instagram.com/sailornano" target="_blank">
+                        <img src="faiza.png.jpg" alt="Faiza Kamila Khairunnisa">
+                        <p>Faiza Kamila Khairunnisa - Software Developer</p>
+                    </a>
+                </div>
+                <div class="team-member">
+                    <a href="https://www.instagram.com/rafarfdh_" target="_blank">
+                        <img src="rafah.png" alt="Rafa Rifdah Fadillah">
+                        <p>Rafa Rifdah Fadillah - Researcher</p>
+                    </a>
+                </div>
             </div>
-            <div class="line"></div>
-            <div class="content">
-                <p>VoksFit! adalah sebuah Website khusus yang diciptakan khusus untuk Mahasiswa/i Program Pendidikan Vokasi Universitas Indonesia, yang sering kali merasa bingung dalam memilih gaya pakaian sesuai dengan Jurusan mereka masing-masing.</p>
-                <p>Kami hadir untuk membantu Anda dengan menyediakan beragam pilihan outfit yang mencerminkan karakteristik setiap asal jurusan Anda. Dan memahami bahwa setiap jurusan memiliki karakteristik dan kebutuhan yang berbeda, sehingga kami hadir untuk memberikan solusi fashion yang tepat.</p>
-            </div>
-            <div class="line"></div>
+            <p>VoksFit! adalah sebuah Website khusus yang diciptakan untuk Mahasiswa/i Vokasi UI...</p>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>2024 VoksFit! All Rights Reserved | Media Production University of Indonesia</p>
+        <p>2024 VoksFit! All Rights Reserved</p>
     </footer>
 
     <script src="script.js"></script>
