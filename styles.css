@@ -152,16 +152,6 @@ main {
     margin: 5px 0;
 }
 
-@media (max-width: 768px) {
-    .team-member {
-        max-width: 150px; /* Ukuran lebih kecil di perangkat kecil */
-    }
-
-    .team-member p {
-        font-size: 12px; /* Ukuran font lebih kecil di perangkat kecil */
-    }
-}
-
 .line {
     height: 2px;
     background-color: #ddd;
