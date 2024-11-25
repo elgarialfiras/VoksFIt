@@ -1,9 +1,15 @@
-/* Global Styles */
-body {
+/* Reset CSS */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem; /* Basis ukuran font */
-    line-height: 1.5;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
@@ -152,127 +158,96 @@ h3 {
 
 /* Recommendations Section */
 .recommendations {
-    padding: 40px 20px;
     text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .recommendation-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 20px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .recommendation img {
-    max-width: 100%;
+    width: 150px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.recommendations p {
-    margin-top: 20px;
-    font-size: 1rem;
+.container p {
+    font-size: 16px;
+    color: #666;
+    margin: 20px 0;
 }
 
 /* About Us Section */
-#about-us {
-    padding: 40px 20px;
-    text-align: center;
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .team-member {
     text-align: center;
-    margin: 10px;
-    max-width: 200px; /* Membatasi ukuran maksimum elemen */
-    display: inline-block;
-}
-
-.team-member a {
-    text-decoration: none;
-    color: inherit;
+    margin: 20px;
 }
 
 .team-member img {
-    width: 100%; /* Gambar akan responsif */
-    max-width: 150px; /* Maksimal ukuran gambar */
-    height: auto; /* Menjaga rasio aspek gambar */
-    border-radius: 50%; /* Membuat gambar bulat */
-    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #6f4c3e;
 }
 
-.team-member p {
-    font-size: 14px; /* Ukuran teks yang proporsional */
-    font-family: 'Poppins', sans-serif;
-    margin: 5px 0;
-}
-
-.line {
-    height: 2px;
-    background-color: #ddd;
-    margin: 20px auto;
-}
-
-.content {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-/* Footer */
-footer {
+.voksfit-section {
     text-align: center;
+    font-family: 'Georgia', serif;
+    color: #7C623D; /* Warna emas-kecoklatan sesuai gambar */
+    background-color: #F9F9F9; /* Warna latar belakang putih */
     padding: 20px;
-    background-color: #978466;
-    color: white;
 }
 
-/* Media Queries */
+.voksfit-section .line {
+    width: 2px;
+    height: 100px;
+    background-color: #7C623D; /* Warna emas-kecoklatan */
+    margin: 0 auto;
+}
 
-/* Tablet (768px ke bawah) */
+.voksfit-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.voksfit-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-    body {
-        font-size: 0.9rem;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hero .container h2 {
-        font-size: 1.5rem;
-    }
-
-    .hero p {
-        font-size: 0.9rem;
-    }
-
-    .hero .button {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-    }
-
-    .department-grid,
-    .recommendation-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
-
-    .team {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-/* HP (480px ke bawah) */
-@media (max-width: 480px) {
-    body {
-        font-size: 0.8rem;
-    }
-
-    header {
+    header .container {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -280,32 +255,33 @@ footer {
 
     nav ul {
         flex-direction: column;
-        gap: 8px;
+        align-items: center;
+        padding: 10px 0;
     }
 
-    .hero {
-        padding: 20px;
+    nav ul li {
+        margin: 10px 0;
     }
 
-    .hero .container h2 {
-        font-size: 1.2rem;
+    .hero h2 {
+        font-size: 2em;
     }
 
     .hero p {
-        font-size: 0.8rem;
+        font-size: 1em;
     }
 
-    .hero .button {
-        font-size: 0.8rem;
-        padding: 6px 12px;
+    .hero {
+        padding: 40px 10px;
     }
 
-    .department-grid,
-    .recommendation-grid {
-        grid-template-columns: 1fr;
+    .department-grid, .recommendation-grid {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .team {
-        grid-template-columns: 1fr;
+    .department, .recommendation, .team-member {
+        width: 100%;
+        max-width: 300px;
     }
 }
