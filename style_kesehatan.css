@@ -12,26 +12,21 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* box paling atas */
-#box1 {
-    height: 70px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:#978466;
-    margin-bottom: 20px;
+.top-sections {
+    margin-top: 70px; 
+    background-color: #978466; 
+    padding: 20px 0; 
 }
 
 #ikon-kembali {
     position: absolute; 
     left: 20px; 
-    top: 18px;
-    cursor: pointer; 
+    top: 10px; 
+    cursor: pointer;
 }
 
 #ikon-kembali:hover {
-    background-color: #d1bc9b;
+    background-color: #d1bc9b; 
 }
 
 /* Deskripsi halaman */
@@ -40,9 +35,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #978466;
-    color: rgb(255, 255, 255);
-    padding: 20px; /* Adds space around the text inside the box */
+    background-color: #ffffff;
+    color: #978466;
+    padding: 20px; 
     max-width: 1100px; 
     margin: 0 auto; 
     text-align: center;
@@ -66,7 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 60vh;
+    height: 60vh; 
     padding: 20px 0;
 }
 
@@ -76,7 +71,7 @@ body {
     justify-content: center;
     gap: 0px; /* gap horixontal */
     pointer-events: none; 
-    line-height: 15; 
+    line-height: 0; 
 }
 
 .button {
@@ -93,11 +88,12 @@ body {
     text-align: center;
     pointer-events: auto; 
     position: relative;
-    z-index: 1; 
+    z-index: 1; /* Pastikan tombol selalu berada di atas */
     margin: 20px; 
     position: relative; 
 
   }
+
 
 .button:hover {
     background-color: #d1bc9b;
@@ -105,9 +101,9 @@ body {
 
 /* Button Pilih Jurusanmu*/
 .button7 {
-    background-color: #ffffff; 
-    color: #6f4e37;
-    border: 2px solid #ffffff; 
+    background-color: #978466; 
+    color: #ffffff;
+    border: 2px solid #978466; 
     padding: 10px 20px; 
     font-size: 14px; 
     width: 150px; 
@@ -140,7 +136,7 @@ body {
 }
 
 .recommendation img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); 
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); 
 }
 
@@ -149,15 +145,17 @@ body {
     position: fixed; 
     bottom: 20px; 
     right: 20px; 
-    width: 100px; 
-    cursor: pointer; 
-    transition: all 0.3s ease;
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
 }
 
 .ikon-kucing:hover {
     content: url('ikon-kucing-hover.png');
 }
 
+/* Styling modal */
+/* Modal */
 /* Modal */
 .modal {
     display: none; 
@@ -167,7 +165,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(0, 0, 0, 0.8); /* Latar belakang gelap transparan */
     justify-content: center; 
     align-items: center; 
 
@@ -177,9 +175,9 @@ body {
 .modal-content {
     max-width: 90%; 
     max-height: 90%; 
-    object-fit: contain;
+    object-fit: contain; /* Pastikan gambar tetap proporsional tanpa terdistorsi */
     border-radius: 8px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Caption gambar */
@@ -205,8 +203,7 @@ body {
     color: #bbb;
 }
 
-
-/* Pop-up deskripsi */
+/* Popup deskripsi */
 .popup {
     visibility: hidden; 
     opacity: 0; 
@@ -220,15 +217,15 @@ body {
     transition: opacity 0.3s ease, transform 0.3s ease; 
     left: 110%; 
     top: 50%; 
-    transform: translateY(-50%) translateX(-10px); 
+    transform: translateY(-50%) translateX(-10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
 }
 
 /* Tampilkan pop-up saat hover */
 .button:hover .popup {
     visibility: visible; 
-    opacity: 1; 
-    transform: translateY(-50%) translateX(0); 
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
 }
 
 /* Tambahkan panah kecil untuk pop-up */
@@ -240,13 +237,13 @@ body {
     transform: translateY(-50%); 
     border-width: 8px; 
     border-style: solid;
-    border-color: transparent transparent transparent #978466;
+    border-color: transparent transparent transparent #978466; 
 }
 
 
 /* Tampilkan pop-up saat hover */
 .button:hover .popup {
-    visibility: visible; 
+    visibility: visible;
     opacity: 1; 
 }
 
@@ -259,14 +256,14 @@ body {
 }
 
 
-/* Styling buat layar hp dengan lebar maksimum 768px */
+/* Styling untuk layar dengan lebar maksimum 768px */
 @media (max-width: 768px) {
     body {
         font-size: 14px;
     }
 
     .hero {
-        padding: 15px;
+        padding: 10px;
         font-size: 14px;
     }
 
@@ -279,64 +276,110 @@ body {
     }
 
     .button-container {
-        height: auto; /* Sesuaikan ketinggian di layar kecil */
+        height: auto; 
         margin-top: 20px;
     }
 
     .button-row {
-        flex-direction: column; /* Tombol disusun vertikal di layar kecil */
+        flex-direction: column; 
     }
 
     .button {
-        width: 100%; /* Tombol memenuhi lebar layar */
+        width: 100%; 
         padding: 15px;
         font-size: 16px;
-        margin: 10px 0; /* Spasi antar tombol vertikal */
+        margin: 10px 0; 
     }
 
     .recommendation-grid {
-        flex-wrap: wrap; /* Foto disusun vertikal di layar kecil */
+        flex-wrap: wrap; 
         gap: 20px;
     }
 
     .recommendation img {
-        max-width: 100%; /* Gambar menyesuaikan lebar */
-        height: auto; /* Jaga proporsi */
+        max-width: 100px; 
+        width: 100%;
     }
 
     #ikon-kembali {
-        top: 10px; /* Sesuaikan posisi ikon */
+        top: 10px; 
         left: 10px;
     }
 
     .ikon-kucing {
-        width: 60px; /* Ukuran ikon lebih kecil */
+        width: 60px; 
         bottom: 10px;
         right: 10px;
     }
 }
 
-/* Styling untuk layar ponsel kecil dengan lebar maksimum 480px */
+/* Styling untuk layar tablet (maksimal 768px) */
+@media (max-width: 768px) {
+    .hero {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .button {
+        width: 90%;
+        padding: 15px;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .recommendation-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .recommendation img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .ikon-kucing {
+        width: 70px;
+    }
+}
+
+/* Styling untuk layar ponsel (maksimal 480px) */
 @media (max-width: 480px) {
-    body {
+    .hero {
+        padding: 10px;
         font-size: 12px;
     }
 
     .hero h2 {
-        font-size: 20px;
-    }
-
-    .hero h3 {
-        font-size: 16px;
-    }
-
-    .recommendation img {
-        width: 80px; /* Ukuran gambar lebih kecil */
-        height: 80px;
+        font-size: 18px;
     }
 
     .button {
-        font-size: 14px; /* Font tombol lebih kecil */
+        font-size: 14px;
         padding: 10px;
     }
+
+    .recommendation-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .recommendation img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .ikon-kucing {
+        width: 50px;
+    }
 }
+
+
