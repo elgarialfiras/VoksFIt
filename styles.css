@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #978466;
     color: white;
 }
 
@@ -42,7 +42,7 @@ main {
 
 /* Hero Section */
 .hero {
-    background-color: #444;
+    background-color: #FFFFFF;
     text-align: center;
     padding: 50px 20px;
     color: white;
@@ -177,7 +177,7 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #978466;
     color: white;
 }
 
