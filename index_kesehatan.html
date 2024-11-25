@@ -5,74 +5,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoksFit Departemen Kesehatan</title>
     <link rel="stylesheet" href="style_kesehatan.css">
-    <script src="script_kesehatan.js" defer></script>
+    <script src="script_kesehatan.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="top-sections">
-            <a href="index.html">
-                <img src="ikon-kembali.png" alt="ikon kembali" id="ikon-kembali">
-            </a>
-        </div>
-    </header>
-
     <main>
-        <!-- Hero Section -->
+        <section>
+            <a href="#box1">
+                <img src="ikon-kucing.png" alt="ikon kucing" class="ikon-kucing">
+            </a>
+        </section>
+
+       <main>
+    <div class="top-sections">
+        <section id="box1">
+            <div>
+                <a href="index.html">
+                    <img src="ikon-kembali-2.png" alt="ikon kembali" id="ikon-kembali">
+                </a>
+            </div>
+        </section>
+    </div>
+</main>
+
         <section class="hero">
             <div class="container">
                 <h2><i>Department of Applied Health</i></h2>
                 <h3><u>(Departemen Kesehatan Terapan)</u></h3>
-                <p>Make Your Outfit Stylish More Gorgeous As Your Major Vibes!</p>
+                <p>Make Your Outfit Stylish More Gorgeous As Your Major Vibes! </p>
                 <button class="button button7">Pilih Jurusanmu!</button>
             </div>
         </section>
 
-        <!-- Button Pilihan Jurusan -->
         <section>
             <div class="button-container">
-                <div class="button-row">
-                    <a href="#fisio"><button class="button">Fisioterapi (D4)</button></a>
-                    <a href="#tropsi"><button class="button">Terapi Okupasi (D4)</button></a>
-                    <a href="#ars"><button class="button">Administrasi Rumah Sakit (D3)</button></a>
+                <div class= button-row>
+                    <a href="#fisio">
+                        <button class="button button1">Fisioterapi (D4)</button>
+                    </a>
+                    <a href="#tropsi">
+                        <button class="button button2">Terapi Okupasi (D4)</button>
+                    </a>
+                    <a href="#ars">
+                        <button class="button button3">Administrasi Rumah Sakit (D3)</button>
+                    </a>
+                </div>
+        </section>
+
+    <!-- REKOMENDASI Fisioterapi (D4)-->
+        <section class="recommendations">
+
+            <div>
+                <button id="fisio" class="button">
+                    Fisioterapi (D4)
+                    <span class="popup">  Lorem ipsum skena Lorem ipsum skena Lorem ipsum skena Lorem ipsum skena <br> Lorem ipsum skena Lorem ipsum skena Lorem ipsum skena Lorem ipsum skena </span>
+                </button>
+            </div>
+
+            <!-- Grid pertama untuk 5 foto pertama -->
+            <div class="recommendation-grid">
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena-1.jpeg" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation" onclick="openPreview(this)"> 
+                    <img src="skena.png" >
+                </div>
+                <div class="recommendation" onclick="openPreview(this)">
+                    <img src="skena.png">
+                </div>
+                <div class="recommendation" onclick="openPreview(this)">
+                    <img src="skena.png">
                 </div>
             </div>
-        </section>
 
-        <!-- Recommendations Sections -->
-        <section class="recommendations" id="fisio">
-            <h2>Fisioterapi (D4)</h2>
+            <!-- Grid kedua untuk 5 foto kedua -->
             <div class="recommendation-grid">
-                <div class="recommendation"><img src="fisio-1.png" onclick="openPreview(this)" alt="Recommendation 1"></div>
-                <div class="recommendation"><img src="fisio-2.png" onclick="openPreview(this)" alt="Recommendation 2"></div>
-                <!-- Tambahkan lainnya -->
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation" onclick="openPreview(this)">
+                    <img src="skena.png">
+                </div>
+                <div class="recommendation" onclick="openPreview(this)">
+                    <img src="skena.png">
+                </div>
+                <div class="recommendation" onclick="openPreview(this)">
+                    <img src="skena.png">
+                </div>
+                <div class="recommendation" onclick="openPreview(this)">
+                    <img src="skena.png">
+                </div>
             </div>
+
         </section>
 
-        <section class="recommendations" id="tropsi">
-            <h2>Terapi Okupasi (D4)</h2>
+    <!-- REKOMENDASI Terapi Okupasi (D4) -->
+        <section class="recommendations-putih">
+
+            <div>
+                <button id="tropsi" class="button">
+                    Terapi Okupasi (D4)
+                    <span class="popup">  Lorem ipsum skena Lorem ipsum skena Lorem ipsum skena Lorem ipsum skena <br> Lorem ipsum skena Lorem ipsum skena Lorem ipsum skena Lorem ipsum skena </span>
+                </button>
+            </div>
+
+            <!-- Grid pertama untuk 5 foto pertama -->
             <div class="recommendation-grid">
-                <div class="recommendation"><img src="tropsi-1.png" onclick="openPreview(this)" alt="Recommendation 1"></div>
-                <div class="recommendation"><img src="tropsi-2.png" onclick="openPreview(this)" alt="Recommendation 2"></div>
-                <!-- Tambahkan lainnya -->
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
             </div>
-        </section>
 
-        <section class="recommendations" id="ars">
-            <h2>Administrasi Rumah Sakit (D3)</h2>
+            <!-- Grid kedua untuk 5 foto kedua -->
             <div class="recommendation-grid">
-                <div class="recommendation"><img src="ars-1.png" onclick="openPreview(this)" alt="Recommendation 1"></div>
-                <div class="recommendation"><img src="ars-2.png" onclick="openPreview(this)" alt="Recommendation 2"></div>
-                <!-- Tambahkan lainnya -->
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
             </div>
-        </section>
-    </main>
 
-    <!-- Modal -->
+        </section>
+
+    <!-- REKOMENDASI Administrasi Rumah Sakit (D3) -->
+        <section class="recommendations">
+
+            <div>
+                <button id="ars" class="button">
+                    Administrasi Rumah Sakit (D3)
+                    <span class="popup">  Lorem ipsum skena Lorem ipsum skena Lorem ipsum skena Lorem ipsum skena <br> Lorem ipsum skena Lorem ipsum skena Lorem ipsum skena Lorem ipsum skena </span>
+                </button>
+            </div>
+
+            <!-- Grid pertama untuk 5 foto pertama -->
+            <div class="recommendation-grid">
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+            </div>
+
+            <!-- Grid kedua untuk 5 foto kedua -->
+            <div class="recommendation-grid">
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+                <div class="recommendation">
+                    <img src="skena.png" onclick="openPreview(this)">
+                </div>
+            </div>
+
+        </section>
+
     <div id="image-preview-modal" class="modal">
         <span class="close" onclick="closePreview()">&times;</span>
         <img id="modal-image" class="modal-content">
         <div id="caption"></div>
     </div>
+
 </body>
+</html>
 </html>
