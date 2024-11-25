@@ -126,22 +126,40 @@ main {
     text-align: center;
 }
 
-.team {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    margin-top: 20px;
+.team-member {
+    text-align: center;
+    margin: 10px;
+    max-width: 200px; /* Membatasi ukuran maksimum elemen */
+    display: inline-block;
+}
+
+.team-member a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .team-member img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
+    width: 100%; /* Gambar akan responsif */
+    max-width: 150px; /* Maksimal ukuran gambar */
+    height: auto; /* Menjaga rasio aspek gambar */
+    border-radius: 50%; /* Membuat gambar bulat */
+    margin-bottom: 10px;
 }
 
 .team-member p {
-    margin-top: 10px;
-    font-size: 1rem;
+    font-size: 14px; /* Ukuran teks yang proporsional */
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        max-width: 150px; /* Ukuran lebih kecil di perangkat kecil */
+    }
+
+    .team-member p {
+        font-size: 12px; /* Ukuran font lebih kecil di perangkat kecil */
+    }
 }
 
 .line {
