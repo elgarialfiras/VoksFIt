@@ -22,25 +22,10 @@ header {
     font-family: 'Montserrat', sans-serif; /* Menggunakan font Montserrat */
 }
 
-.container {
-    background: #978466; /* Transparansi kotak */
-    backdrop-filter: blur(8px); /* Efek blur pada kotak */
-    padding: 60px 10px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 1000px;
-    width: 100%; /* Pastikan kotak tidak lebih lebar dari konten */
-    position: absolute; /* Memungkinkan pengaturan posisi manual */
-    top: 150px; /* Sesuaikan jarak dari atas */
-    left: 50%; /* Posisi di tengah horizontal */
-    transform: translateX(-50%); /* Menyeimbangkan posisi kotak agar tetap di tengah */
-    z-index: 1; /* Menjamin kotak tetap di atas latar belakang */
-}
-
-h1 a {
+header h1 a {
     text-decoration: none;
     color: #978466;
-    font-size: 1.0em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -57,7 +42,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #978466;
-    font-weight: 50;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
@@ -66,33 +51,51 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.container {
+    background: #978466; /* Transparansi kotak */
+    backdrop-filter: blur(8px); /* Efek blur pada kotak */
+    padding: 60px 10px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 1000px;
+    width: 100%; /* Pastikan kotak tidak lebih lebar dari konten */
+    position: absolute; /* Memungkinkan pengaturan posisi manual */
+    top: 150px; /* Sesuaikan jarak dari atas */
+    left: 50%; /* Posisi di tengah horizontal */
+    transform: translateX(-50%); /* Menyeimbangkan posisi kotak agar tetap di tengah */
+    z-index: 1; /* Menjamin kotak tetap di atas latar belakang */
+}
+
 /* Hero Section */
 .hero {
-    background-color: #f9f9f9;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50vh;
+    background-color: #f9f9f9;
     text-align: center;
-    color: white;
 }
 
 .hero .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    max-width: 600px;
+    background: rgba(151, 132, 102, 0.9);
+    backdrop-filter: blur(8px);
+    padding: 60px 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 800px;
+    position: relative;
 }
 
 .hero h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: white;
 }
 
 .hero p {
     font-size: 1.2em;
     margin-bottom: 30px;
+    color: white;
 }
 
 .button {
