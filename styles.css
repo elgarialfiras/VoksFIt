@@ -275,29 +275,26 @@ nav ul li a:hover {
 .voksfit-section {
     text-align: center;
     font-family: 'Georgia', serif;
-    color: #7C623D; /* Warna emas-kecoklatan */
+    color: #7C623D; /* Warna emas kecoklatan */
     background-color: #F9F9F9;
-    padding: 40px 20px; /* Tambahkan padding untuk jarak */
+    padding: 40px 20px;
+    margin: 40px auto; /* Tambahkan margin untuk jarak antar elemen */
+    max-width: 800px; /* Batas lebar area */
 }
 
 .voksfit-section .line {
-    width: 80%; /* Lebar garis */
-    height: 2px; /* Tinggi garis */
+    width: 60%; /* Lebar garis */
+    height: 3px; /* Tinggi garis */
     background-color: #7C623D;
-    margin: 20px auto; /* Jarak otomatis agar berada di tengah */
-}
-
-.voksfit-section h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 20px 0; /* Tambahkan margin untuk jarak */
+    margin: 20px auto; /* Posisikan di tengah dengan jarak atas dan bawah */
 }
 
 .voksfit-section p {
     font-size: 16px;
     line-height: 1.8;
-    margin: 20px auto; /* Ruang lebih besar di atas dan bawah */
+    margin: 20px auto; /* Jarak lebih besar antara paragraf */
     max-width: 600px; /* Batas lebar teks */
+    color: #333; /* Warna teks netral */
 }
 
 /* Footer Styles */
