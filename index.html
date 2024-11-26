@@ -64,6 +64,21 @@
             </div>
         </section>
 
+        <script>
+            // Menambahkan event listener untuk tombol "Pick Your Style"
+            document.addEventListener('DOMContentLoaded', function() {
+                const pickStyleButton = document.querySelector('.button');
+                pickStyleButton.addEventListener('click', function() {
+                    const departmentsSection = document.querySelector('.departments');
+                    if (departmentsSection) {
+                        departmentsSection.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                        console.error('Elemen dengan class .departments tidak ditemukan.');
+                    }
+                });
+            });
+        </script>
+
         <!-- Recommendations Section -->
         <section class="recommendations">
             <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-offset="350">Be Comfy and Fashionable!</h2>
