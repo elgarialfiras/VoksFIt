@@ -279,7 +279,7 @@ nav ul li a:hover {
     background-color: #F9F9F9;
     padding: 40px 20px;
     margin: 20px auto; /* Tambahkan margin untuk jarak antar elemen */
-    max-width: 1000px; /* Batas lebar area */
+    max-width: 800px; /* Batas lebar area */
 }
 
 .voksfit-section .line {
@@ -293,7 +293,7 @@ nav ul li a:hover {
     font-size: 16px;
     line-height: 1.8;
     margin: 20px auto; /* Jarak lebih besar antara paragraf */
-    max-width: 600px; /* Batas lebar teks */
+    max-width: 800px; /* Batas lebar teks */
     color: #333; /* Warna teks netral */
 }
 
