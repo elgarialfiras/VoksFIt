@@ -278,7 +278,7 @@ nav ul li a:hover {
     color: #7C623D; /* Warna emas kecoklatan */
     background-color: #F9F9F9;
     padding: 40px 20px;
-    margin: 40px auto; /* Tambahkan margin untuk jarak antar elemen */
+    margin: 20px auto; /* Tambahkan margin untuk jarak antar elemen */
     max-width: 1000px; /* Batas lebar area */
 }
 
