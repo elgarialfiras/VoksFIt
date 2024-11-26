@@ -12,6 +12,11 @@ body {
     line-height: 1.6;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 header {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically */
@@ -334,17 +339,19 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
-    header .container {
+    /* Header */
+    header {
         flex-direction: column;
-        align-items: center;
         text-align: center;
+    }
+
+    header h1 a {
+        font-size: 1.2em; /* Kurangi ukuran teks header */
     }
 
     nav ul {
         flex-direction: column;
-        align-items: center;
         padding: 10px 0;
     }
 
@@ -352,25 +359,95 @@ footer {
         margin: 10px 0;
     }
 
+    /* Hero Section */
     .hero h2 {
-        font-size: 2em;
+        font-size: 1.8em; /* Kurangi ukuran teks */
     }
 
     .hero p {
-        font-size: 1em;
+        font-size: 1em; /* Kurangi ukuran paragraf */
     }
 
-    .hero {
-        padding: 40px 10px;
+    .hero .container {
+        padding: 20px;
+        max-width: 90%; /* Sesuaikan lebar */
     }
 
-    .department-grid, .recommendation-grid {
-        flex-direction: column;
-        align-items: center;
+    .button {
+        padding: 10px 20px; /* Sesuaikan ukuran tombol */
+        font-size: 0.9em;
     }
 
-    .department, .recommendation, .team-member {
-        width: 100%;
-        max-width: 300px;
+    /* Department Section */
+    .departments {
+        padding: 50px 10px; /* Kurangi padding */
+    }
+
+    .department-grid {
+        flex-direction: column; /* Ubah grid menjadi kolom */
+        gap: 20px; /* Kurangi jarak antar elemen */
+    }
+
+    .department {
+        width: 100%; /* Penuhi lebar container */
+        max-width: 300px; /* Atur batas lebar */
+    }
+
+    .department img {
+        width: 100%; /* Sesuaikan ukuran gambar */
+        max-width: 100%; /* Hindari gambar terlalu besar */
+    }
+
+    .department h4 {
+        font-size: 1em; /* Kurangi ukuran teks */
+    }
+
+    /* Recommendations Section */
+    .recommendations {
+        padding: 20px 10px; /* Kurangi padding */
+    }
+
+    .recommendation-grid {
+        flex-direction: column; /* Susun vertikal */
+        gap: 15px; /* Kurangi jarak antar elemen */
+    }
+
+    .recommendation img {
+        width: 100%; /* Penuhi lebar container */
+        max-width: 250px; /* Batasi ukuran gambar */
+    }
+
+    /* About Us Section */
+    #about-us {
+        padding: 20px 10px; /* Kurangi padding */
+    }
+
+    #about-us h2 {
+        font-size: 1.5em; /* Kurangi ukuran teks */
+    }
+
+    .team {
+        flex-direction: column; /* Susun anggota tim secara vertikal */
+        gap: 20px; /* Tambahkan jarak antar elemen */
+    }
+
+    .team-member {
+        width: 100%; /* Penuhi lebar container */
+        max-width: 300px; /* Batasi ukuran */
+    }
+
+    .team-member img {
+        width: 80px; /* Sesuaikan ukuran gambar */
+        height: 80px; /* Jaga proporsi gambar */
+    }
+
+    .team-member p {
+        font-size: 0.9em; /* Kurangi ukuran teks */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9em; /* Kurangi ukuran teks */
+        padding: 10px 0;
     }
 }
