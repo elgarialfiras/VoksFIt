@@ -225,6 +225,21 @@ nav ul li a:hover {
 }
 
 /* About Us Section */
+#about-us {
+    padding: 20px 0;
+    text-align: center;
+}
+
+#about-us h2 {
+    background-color: #978466; /* Warna latar belakang */
+    color: #ffffff; /* Warna teks */
+    padding: 10px 20px; /* Padding di sekitar teks */
+    display: inline-block; /* Membuat latar belakang menyesuaikan lebar teks */
+    border-radius: 8px; /* Memberikan sedikit sudut melengkung */
+    font-size: 24px; /* Ukuran teks */
+    margin-bottom: 20px; /* Jarak dengan konten di bawahnya */
+}
+
 .team {
     display: flex;
     justify-content: space-around;
@@ -232,6 +247,7 @@ nav ul li a:hover {
     padding: 40px 20px; /* Tambahkan padding untuk proporsi lebih baik */
     text-align: center;
 }
+
 
 .team-member {
     margin: 20px;
