@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Tombol "Pick Your Style" untuk navigasi ke halaman departemen
-    const pickStyleButton = document.querySelector('.button');
+    const pickStyleButton = document.querySelector('button');
     if (pickStyleButton) {
         pickStyleButton.addEventListener('click', function() {
             const departmentsSection = document.querySelector('.departments');
