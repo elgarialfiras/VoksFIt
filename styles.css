@@ -300,9 +300,9 @@ nav ul li a:hover {
     font-family: 'Georgia', serif;
     color: #7C623D; /* Warna emas kecoklatan */
     background-color: #F9F9F9;
-    padding: 40px 20px;
-    margin: 20px auto; /* Tambahkan margin untuk jarak antar elemen */
-    max-width: 800px; /* Batas lebar area */
+    padding: 20px 20px; 
+    margin: 10px auto; 
+    max-width: 800px; /* Batas lebar area tetap */
 }
 
 .voksfit-section .line {
