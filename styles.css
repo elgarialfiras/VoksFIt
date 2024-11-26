@@ -209,6 +209,13 @@ nav ul li a:hover {
     height: auto;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Zoom effect on hover */
+.recommendation img:hover {
+    transform: scale(1.1); /* Zoom in slightly */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow */
 }
 
 .container p {
