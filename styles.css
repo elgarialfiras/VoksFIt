@@ -222,18 +222,53 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 40px 20px; /* Tambahkan padding untuk proporsi lebih baik */
+    text-align: center;
 }
 
 .team-member {
-    text-align: center;
     margin: 20px;
+    width: 200px; /* Berikan lebar tetap agar terlihat rapi */
+    transition: transform 0.3s ease; /* Efek hover */
 }
 
+.team-member:hover {
+    transform: scale(1.05); /* Zoom in saat hover */
+}
+
+/* Gambar Anggota Tim */
 .team-member img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    border: 2px solid #6f4c3e;
+    border-radius: 50%; /* Membulatkan gambar */
+    border: 2px solid #6f4c3e; /* Warna border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.1); /* Zoom in gambar saat hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Efek bayangan hover */
+}
+
+/* Teks Anggota Tim */
+.team-member p {
+    margin-top: 10px; /* Jarak antara gambar dan teks */
+    font-size: 16px;
+    color: #333; /* Warna teks netral */
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* Styling untuk Link */
+.team-member a {
+    text-decoration: none; /* Hilangkan underline default */
+    color: inherit; /* Warna teks mengikuti parent */
+    transition: color 0.3s ease; /* Animasi hover */
+}
+
+.team-member a:hover {
+    color: #ff5733; /* Ubah warna saat hover */
 }
 
 /* VoksFit Section */
