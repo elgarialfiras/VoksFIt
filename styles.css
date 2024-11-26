@@ -123,7 +123,7 @@ nav ul li a:hover {
 /* Department Section */
 .departments {
     text-align: center;
-    padding: 60px 20px; /* Kurangi padding untuk proporsi lebih baik */
+    padding: 100px;
 }
 
 .departments h3 {
