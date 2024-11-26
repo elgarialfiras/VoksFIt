@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
-            if (targetSection) { // Cek apakah elemen tujuan ada
+            if (targetSection) {
                 targetSection.scrollIntoView({ behavior: 'smooth' });
             } else {
                 console.error(`Elemen dengan ID ${targetId} tidak ditemukan.`);
@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Tombol "Pick Your Style" untuk navigasi ke halaman departemen
     const pickStyleButton = document.querySelector('.button');
-    if (pickStyleButton) { // Pastikan tombol ada
+    if (pickStyleButton) {
         pickStyleButton.addEventListener('click', function() {
             const departmentsSection = document.querySelector('.departments');
-            if (departmentsSection) { // Cek apakah elemen departemen ada
+            if (departmentsSection) {
                 departmentsSection.scrollIntoView({ behavior: 'smooth' });
             } else {
                 console.error('Elemen dengan class .departments tidak ditemukan.');
